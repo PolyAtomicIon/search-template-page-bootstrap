@@ -6,8 +6,9 @@ html, body {height: 100%;}
 }
 
 .vertical-center {
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-	min-height: 100vh; /* These two lines are counted as one :-)       */
+	/* min-height: 100%;  
+	min-height: 100vh;  */
+	min-height: 350px;
 
 	display: flex;
 	align-items: center;
@@ -23,3 +24,12 @@ label[for=search-query] {font-size: 4em;}
 
 .clearfix {clear: both;}
 .debug {border: 1px solid red;}
+
+.results {
+	background: red;
+	display: none;
+}
+
+.results--active {
+	display: block;
+}
